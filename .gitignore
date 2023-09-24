@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# ssl/ holds certificates/keys and mkcert binaries used to test on localhost with HTTPS
+ssl/
