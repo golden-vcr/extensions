@@ -20,7 +20,7 @@
       }
       dismissTimer = setTimeout(() => {
         dismissed = true
-      }, 8000 + 9999999)
+      }, 8000)
     } else {
       tape = null
       dismissed = false
