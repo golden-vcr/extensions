@@ -19,9 +19,4 @@
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25));
     white-space: nowrap;
   }
-  @media only screen and (max-width: 696px) {
-    div {
-      font-size: 0.875rem;
-    }
-  }
 </style>
