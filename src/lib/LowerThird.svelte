@@ -66,16 +66,16 @@
     height: 25%;
     position: absolute;
     bottom: 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.75) 10%, rgba(0, 0, 0, 0.75) 90%, rgba(0, 0, 0, 0) 95%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 2%, rgba(0, 0, 0, 0.75) 5%, rgba(0, 0, 0, 0.75) 95%, rgba(0, 0, 0, 0) 98%);
     display: flex;
     user-select: none;
     cursor: pointer;
   }
   .container:hover {
-    background: linear-gradient(to bottom, rgba(16, 16, 16, 0) 5%, rgba(16, 16, 16, 0.75) 10%, rgba(16, 16, 16, 0.75) 90%, rgba(16, 16, 16, 0) 95%);
+    background: linear-gradient(to bottom, rgba(16, 16, 16, 0) 2%, rgba(16, 16, 16, 0.75) 5%, rgba(16, 16, 16, 0.75) 95%, rgba(16, 16, 16, 0) 98%);
   }
   .container:active {
-    background: linear-gradient(to bottom, rgba(32, 32, 32, 0) 5%, rgba(32, 32, 32, 0.75) 10%, rgba(32, 32, 32, 0.75) 90%, rgba(32, 32, 32, 0) 95%);
+    background: linear-gradient(to bottom, rgba(32, 32, 32, 0) 2%, rgba(32, 32, 32, 0.75) 5%, rgba(32, 32, 32, 0.75) 95%, rgba(32, 32, 32, 0) 98%);
   }
   img {
     height: fit-content;
@@ -83,7 +83,7 @@
     margin: 0 1rem;
   }
   .info {
-    margin-top: 2.5em;
+    margin-top: 1.8em;
     line-height: 1;
   }
   h1 {
