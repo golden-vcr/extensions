@@ -13,7 +13,7 @@ export default defineConfig({
     },
   },
   server: {
-    port: 8080,
+    port: 5180,
     strictPort: true,
     https: {
       key: fs.readFileSync('./ssl/key.pem'),

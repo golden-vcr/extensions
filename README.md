@@ -26,7 +26,7 @@ information about the tape that's currently being viewed.
 When [testing in Local Mode](https://dev.twitch.tv/docs/extensions/#develop-your-extension),
 Twitch renders our extension in an iframe that loads this URL:
 
-- `https://localhost:8080/video_overlay.html`
+- `https://localhost:5180/video_overlay.html`
 
 Since Twitch is served over HTTPS, it has to load our extension from an HTTPS-enabled
 origin as well. This means that we need our Vite development server to be configured
@@ -58,11 +58,11 @@ After running the `init-ssl` script for the first time, you can test locally wit
 - `npm run dev`
 
 Once running, the development server should serve the overlay extension at
-https://localhost:8080/video_overlay.html. You can load this page in a browser, and the
+https://localhost:5180/video_overlay.html. You can load this page in a browser, and the
 app should be hot-reloaded as you make changes to the code. When running locally,
 requests to `/api/*` will be proxied to `https://goldenvcr.com/api/*`.
 
 The only way to test the extension embedded in a Twitch stream is to go live on a
 channel that has the extension enabled. When your extension is configured in Local Test
 mode, Twitch will configure the overlay iframe to load the very same version of the app
-that you're running locally, at `https://localhost:8080/video_overlay.html`.
+that you're running locally, at `https://localhost:5180/video_overlay.html`.
