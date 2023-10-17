@@ -5,7 +5,7 @@ const LOCAL_BACKEND_PATH_PREFIXES = {
 
 export const config = {
   backendBaseUrl: 'https://goldenvcr.com',
-  useLocalBackend: true,
+  useLocalBackend: false,
 }
 
 export function buildUrl(path: string) {
