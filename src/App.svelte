@@ -1,6 +1,8 @@
 <script lang="ts">
   import { onMount } from "svelte"
-  import { state, initApplicationState } from "./store";
+  import { state, initApplicationState } from "./store"
+
+  import LowerThird from "./lib/LowerThird.svelte"
 
   onMount(async () => {
     await initApplicationState()
@@ -8,25 +10,32 @@
 </script>
 
 <main>
-{#if $state.mode === 'screening'}
-  <img src={$state.tape.images[0].url} alt="tape" />
-  <div class="third">
-    <h1>{$state.tape.title}</h1>
+  <div class="frame">
+    <LowerThird />
   </div>
-{/if}
 </main>
 
 <style>
   main {
     width: 100%;
     height: 100%;
-    padding: 5vh;
   }
-  img {
+  .frame {
+    width: 100vw;
+    height: 56.25vw;
+    max-height: 100vh;
+    max-width: 177.78vh;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .test-image {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    object-position: left;
   }
   .third {
     position: absolute;

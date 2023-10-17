@@ -7,6 +7,8 @@ export type Tape = {
   title: string
   year?: number
   runtime?: number
+  color: string
+  thumbnailUrl: string
   images: TapeImage[]
   tags: string[]
 }
@@ -57,6 +59,8 @@ export class TapeCache {
       title: item.title,
       year: item.year || undefined,
       runtime: item.runtime || undefined,
+      color: item.images.length > 0 ? item.images[0].color : '#cccccc',
+      thumbnailUrl: `${this.imageHost}/${item.thumbnail}`,
       images,
       tags: item.tags,
     }
