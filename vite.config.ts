@@ -19,11 +19,5 @@ export default defineConfig({
       key: fs.readFileSync('./ssl/key.pem'),
       cert: fs.readFileSync('./ssl/cert.pem'),
     },
-    proxy: {
-      '/api': {
-        target: 'https://goldenvcr.com',
-        changeOrigin: true,
-      },
-    },
   },
 })

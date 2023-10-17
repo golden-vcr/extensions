@@ -1,7 +1,17 @@
+<script lang="ts">
+  import { onMount } from "svelte"
+  import { state, initApplicationState } from "./store";
+
+  onMount(async () => {
+    await initApplicationState()
+  })
+</script>
+
 <main>
   <img src="https://golden-vcr-images.nyc3.digitaloceanspaces.com/0058_a.jpg" alt="tape" />
   <div class="third">
     <h1>Pressure Washers (DeVilbiss Air Power Company)</h1>
+    <p>{JSON.stringify($state)}</p>
   </div>
 </main>
 
