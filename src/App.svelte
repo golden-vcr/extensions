@@ -8,11 +8,12 @@
 </script>
 
 <main>
-  <img src="https://golden-vcr-images.nyc3.digitaloceanspaces.com/0058_a.jpg" alt="tape" />
+{#if $state.mode === 'screening'}
+  <img src={$state.tape.images[0].url} alt="tape" />
   <div class="third">
-    <h1>Pressure Washers (DeVilbiss Air Power Company)</h1>
-    <p>{JSON.stringify($state)}</p>
+    <h1>{$state.tape.title}</h1>
   </div>
+{/if}
 </main>
 
 <style>
